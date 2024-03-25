@@ -163,3 +163,11 @@ button {
 form + p {
   margin: 0 0 1rem 4rem;
 }
+
+.error {
+  border: 1px solid red;
+}
+
+.success {
+  border: 1px solid green;
+}

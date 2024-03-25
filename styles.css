@@ -154,12 +154,16 @@ legend {
   color: #6d6d6d
 }
 
-.right {
-}
-
 input {
   padding: 0.5rem;
   max-width: 250px;
+  border: solid 2px #E5E7EB;
+}
+
+input:focus {
+  border: solid 2px #00404a;
+  border-radius: 4px;
+  outline: none;
 }
 
 button {
@@ -189,6 +193,22 @@ form + p {
 
 .error {
   border: 1px solid red;
+  position: relative;
+}
+
+.error-parent{
+  position: relative;
+
+}
+
+.error-parent::after {
+  content: "*passwords do not match";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+  font-size: .75rem;
+  position: absolute;
+  top: 3.45rem;
+  min-width: 190px;
 }
 
 .success {
